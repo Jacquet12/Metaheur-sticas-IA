@@ -1,3 +1,31 @@
 instancia,autoria,algoritmo,q-medio,q-desvio,t-medio,% do ótimo
-Z,Jacquet_Code,BCGα0.2vmp,671328.2,7317.72,30.07,704.1
-Z,Jacquet_Code,BT2opt-m4,508249.4,580832.78,30.12,533.06
+Western Sahara,Jacquet Leme,BLPMsh,30068.0,0.0,0.0,108.93
+Western Sahara,Jacquet Leme,BLPM2opt,28294.0,0.0,0.0,102.5
+Western Sahara,Jacquet Leme,BLPMswap,-7832629879.5,4521522517.93,52.94,-28376009.42
+Western Sahara,Jacquet Leme,BLMM2opt,28147.0,0.0,0.01,101.97
+Western Sahara,Jacquet Leme,BLMMsh,29226.0,0.0,0.0,105.88
+Western Sahara,Jacquet Leme,BLMMswap,-1062090883.0,580738534.51,6.06,-3847737.14
+Djibouti,Jacquet Leme,BLPMsh,9515.0,0.0,0.0,142.95
+Djibouti,Jacquet Leme,BLPM2opt,6657.0,0.0,0.0,100.02
+Djibouti,Jacquet Leme,BLPMswap,-33251307.0,17728000.06,1.49,-499568.92
+Djibouti,Jacquet Leme,BLMM2opt,6656.0,0.0,0.0,100.0
+Djibouti,Jacquet Leme,BLMMsh,8916.0,88.54,0.01,133.95
+Djibouti,Jacquet Leme,BLMMswap,-15159542.2,10651135.37,0.5,-227757.55
+Qatar,Jacquet Leme,BLPMsh,14179.0,0.0,0.57,151.61
+Qatar,Jacquet Leme,BLPM2opt,10138.0,0.0,0.38,108.4
+Qatar,Jacquet Leme,BLPMswap,-2044.1,14195.08,0.2,-21.86
+Qatar,Jacquet Leme,BLMM2opt,10148.0,0.0,0.26,108.51
+Qatar,Jacquet Leme,BLMMsh,13901.0,0.0,0.95,148.64
+Qatar,Jacquet Leme,BLMMswap,-11815.6,16537.49,0.09,-126.34
+Uruguay,Jacquet Leme,BLPMsh,128430.0,0.0,51.78,162.34
+Uruguay,Jacquet Leme,BLPM2opt,83322.0,0.0,32.67,105.32
+Uruguay,Jacquet Leme,BLPMswap,514316.6,63467.89,4.69,650.1
+Uruguay,Jacquet Leme,BLMM2opt,87074.0,0.0,19.13,110.06
+Uruguay,Jacquet Leme,BLMMsh,138097.0,0.0,85.21,174.55
+Uruguay,Jacquet Leme,BLMMswap,441705.5,62842.91,2.02,558.32
+Zimbabwe,Jacquet Leme,BLPMsh,168226.0,0.0,87.16,176.44
+Zimbabwe,Jacquet Leme,BLPM2opt,102434.0,0.0,74.9,107.44
+Zimbabwe,Jacquet Leme,BLPMswap,660234.6,87859.42,11.19,692.47
+Zimbabwe,Jacquet Leme,BLMM2opt,105705.0,0.0,39.57,110.87
+Zimbabwe,Jacquet Leme,BLMMsh,202513.6,2229.63,186.91,212.4
+Zimbabwe,Jacquet Leme,BLMMswap,589465.1,85925.46,5.23,618.24

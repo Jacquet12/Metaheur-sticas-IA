@@ -7,7 +7,7 @@ from Constructive.Criteria.VerticeMaisProximo import VerticeMaisProximo
 from Local.BuscaLocalMelhorMelhora import BuscaLocalMelhorMelhora
 from Local.BuscaLocalPrimeiraMelhora import BuscaLocalPrimeiraMelhora
 from Local.BuscaTabu import BuscaTabu
-from Local.Neighbourhood.SuaVizinhanca import SuaVizinhanca
+from Local.Neighbourhood.VizinhancaSwap import VizinhancaSwap
 from Local.Neighbourhood.Vizinhanca2opt import Vizinhanca2opt
 from Local.Neighbourhood.VizinhancaShift import VizinhancaShift
 from Constructive.BuscaConstrutivaGulosoAlfa import BuscaConstrutivaGulosoAlfa
@@ -53,14 +53,14 @@ def escrever_resultados_amostras(resultados: list) -> None:
 
 
 # Constantes/Parâmetros Fixos
-arquivos = ('zi929',)
-tamanho_total = 929
-instancias = ("Zimbabwe")
-solucoes_otimas = (95345,)
+arquivos = ('wi29', 'dj38', 'qa194', 'uy734', 'zi929')
+tamanho_total = 29 + 38 + 194 + 734 + 929
+instancias = ("Western Sahara", "Djibouti", "Qatar", "Uruguay", "Zimbabwe")
+solucoes_otimas = (27603, 6656, 9352, 79114, 95345)
 amostras = 10
-tempo_total_maximo = 2 * 10 * 0.5  # em minutos
+tempo_total_maximo = 3 * 60 * 60  # em minutos
 # Mudar para o seu nome ou sobrenome
-autoria = "Jacquet_Code"
+autoria = "Jacquet Leme"
 
 
 def main():
@@ -71,16 +71,16 @@ def main():
         algoritmos = (
             # Não é necessário executar as buscas construtivas para a atividade
             #BuscaConstrutivaGulosoAlfa(VerticeMaisProximo(distancias), solucao_otima, 0),
-            BuscaConstrutivaGulosoAlfa(VerticeMaisProximo(distancias), solucao_otima, 0.20),
+            #BuscaConstrutivaGulosoAlfa(VerticeMaisProximo(distancias), solucao_otima, 0.1),
             #BuscaConstrutivaGulosoAlfa(VerticeMaisProximo(distancias), solucao_otima, 0.2),
             #BuscaConstrutivaGulosoAlfa(VerticeMaisProximo(distancias), solucao_otima, 0.3),
-            # BuscaLocalMelhorMelhora(Vizinhanca2opt(distancias), solucao_otima),
-            # BuscaLocalMelhorMelhora(VizinhancaShift(distancias), solucao_otima),
-            # BuscaLocalMelhorMelhora(SuaVizinhanca(distancias), solucao_otima),  # Mudar nome para a Vizinhanca implementada
-            # BuscaLocalPrimeiraMelhora(Vizinhanca2opt(distancias), solucao_otima),
-            # BuscaLocalPrimeiraMelhora(VizinhancaShift(distancias), solucao_otima),
-            # BuscaLocalPrimeiraMelhora(SuaVizinhanca(distancias), solucao_otima),  # Mudar nome para a Vizinhanca implementada
-            BuscaTabu(Vizinhanca2opt(distancias), solucao_otima, 4),
+            BuscaLocalPrimeiraMelhora(VizinhancaShift(distancias), solucao_otima),
+            BuscaLocalPrimeiraMelhora(Vizinhanca2opt(distancias), solucao_otima),
+            BuscaLocalPrimeiraMelhora(VizinhancaSwap(distancias), solucao_otima),
+            BuscaLocalMelhorMelhora(Vizinhanca2opt(distancias), solucao_otima),
+            BuscaLocalMelhorMelhora(VizinhancaShift(distancias), solucao_otima),
+            BuscaLocalMelhorMelhora(VizinhancaSwap(distancias), solucao_otima),  # Mudar nome para a Vizinhanca implementada
+            # BuscaTabu(Vizinhanca2opt(distancias), solucao_otima, 3),
             # BuscaTabu(VizinhancaShift(distancias), solucao_otima, 3),
             # BuscaTabu(SuaVizinhanca(distancias), solucao_otima, 3),  # Mudar nome para a Vizinhanca implementada
             # BuscaTabu(Vizinhanca2opt(distancias), solucao_otima, 5),
